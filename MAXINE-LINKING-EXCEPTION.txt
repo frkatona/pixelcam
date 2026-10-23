@@ -1,0 +1,8 @@
+Additional permission for original PixelCam source under GPL-2.0-or-later:
+
+You may link original PixelCam code to the NVIDIA Maxine Video Effects and Augmented Reality SDK runtimes,
+CUDA runtime, and the accompanying NVIDIA libraries and models, and convey that
+combination, subject to compliance with the licenses of those components. This
+permission does not relicense NVIDIA software or third-party OBS/FFmpeg code.
+NVIDIA's runtime and models remain under their own terms and are obtained separately.
+Modified versions of original PixelCam source may retain this additional permission.

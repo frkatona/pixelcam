@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>PixelCam</AssemblyName>
+    <Version>0.7.0</Version>
+    <ApplicationIcon>assets\PixelCam.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup><Compile Remove="RegisterCamera.cs" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="assets\PixelCam.ico" LogicalName="PixelCam.AppIcon" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="MaxinePackages.json" LogicalName="PixelCam.MaxinePackages" /></ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(PixelCamMaxine LANGUAGES CXX)
+add_library(PixelCamMaxine SHARED PixelCamMaxine.cpp nvidia/src/NVVideoEffectsProxy.cpp nvidia/src/nvCVImageProxy.cpp nvidia-ar/src/nvARProxy.cpp)
+target_include_directories(PixelCamMaxine PRIVATE nvidia/include nvidia-ar/include)
+target_compile_features(PixelCamMaxine PRIVATE cxx_std_17)
+target_compile_definitions(PixelCamMaxine PRIVATE _CRT_SECURE_NO_WARNINGS)
+set_property(TARGET PixelCamMaxine PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")

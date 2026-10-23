@@ -1,0 +1,11 @@
+PixelCam is an experimental Windows x64 camera companion.
+
+Setup includes the application, its .NET runtime, the Android sender, a sample video, and the Maxine extraction helper. It downloads checksum-verified video tools from BtbN/FFmpeg and USB tools from Google. Internet access is required during installation.
+
+Maxine and Eye Contact are optional. After installation, open Background and choose Set up Maxine or Set up Eye contact. The application selects packages for a supported RTX GPU and reuses downloaded packages on later launches. NVIDIA supplies and licenses these runtimes separately.
+
+The current phone transport requires USB debugging and authorization of this PC. You may need Google's Pixel USB driver. Android Studio, Visual Studio, and the CUDA toolkit are not required to run PixelCam.
+
+This installer is not code-signed. Windows may show an unknown-publisher warning. Download from https://github.com/frkatona/pixelcam/releases and compare the provided SHA-256 checksum.
+
+Uninstall removes the program and webcam registration. It keeps your settings and downloaded AI packages in your local PixelCam data folder for later reinstallations.

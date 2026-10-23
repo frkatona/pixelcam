@@ -1,0 +1,18 @@
+# Release assets are uploaded to GitHub Releases, not committed.
+releases/
+runtime/
+PixelCam.exe
+PixelCam.pdb
+PixelCam-Android.apk
+*.jks
+*.keystore
+*.pfx
+*.p12
+**/bin/
+**/obj/
+**/build/
+**/.gradle/
+**/local.properties
+*.user
+PixelCam-error.txt
+settings-*.json
