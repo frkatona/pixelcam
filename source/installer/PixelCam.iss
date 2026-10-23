@@ -109,7 +109,7 @@ begin
   Summary := 'The Background tab checks your NVIDIA GPU and downloads matching Maxine packages when you request them. Ordinary webcam controls work without Maxine.';
   if Exec(ExpandConstant('{tmp}\PixelCam.exe'), '--hardware-summary "' + ExpandConstant('{tmp}\gpu.txt') + '"', '', SW_HIDE, ewWaitUntilTerminated, ExitCode) then
     if ExitCode = 0 then LoadStringFromFile(ExpandConstant('{tmp}\gpu.txt'), Summary);
-  HardwarePage := CreateOutputMsgPage(wpInfoBefore, 'Graphics hardware', 'Optional NVIDIA effects', String(Summary) + #13#10#13#10 +
+  HardwarePage := CreateOutputMsgPage(wpInfoBefore, 'Graphics hardware', 'Optional NVIDIA effects', Utf8Decode(Summary) + #13#10#13#10 +
     'Set up Maxine and Eye contact from PixelCam''s Background tab after installation. These large downloads are cached and reused.' + #13#10#13#10 +
     'Setup downloads video tools (about 77 MiB) from BtbN/FFmpeg and USB tools (about 8 MiB) from Google. Internet access is required. A Pixel USB driver may also be needed; see the manual.');
   DownloadPage := CreateDownloadPage('Downloading required tools', 'Getting video and USB tools from their upstream publishers.', @DownloadProgress);
